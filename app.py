@@ -124,8 +124,8 @@ class LinearRegression:
         # Initialize bias to zero
         # Hint: Use np.random.randn() for weights
 
-        self.weights = np.random.randn()  # REPLACE THIS
-        self.bias = np.random.randn(0)     # REPLACE THIS
+        self.weights = np.random.randn(X.shape[1]) * 0.01  # REPLACE THIS
+        self.bias = 0     # REPLACE THIS
 
         # ==========================================
         # Training loop
