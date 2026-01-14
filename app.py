@@ -334,7 +334,8 @@ def plot_residuals(y_true, y_pred):
     # ==========================================
     # TODO 7c: Create residuals plot
     # ==========================================
-
+    y_true = np.asarray(y_true).ravel()
+    y_pred = np.asarray(y_pred).ravel()
     residuals = y_true - y_pred
 
     fig = go.Figure()
